@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Use min-height for better responsiveness */
+    width: 100%; /* Use percentage-based width for responsiveness */
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+img {
+    display: block;
+    max-width: 100%; /* Allow the image to adapt to the container's width */
+    height: auto; /* Maintain aspect ratio without setting a fixed height */
+}
