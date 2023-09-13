@@ -1,25 +1,94 @@
+/* Reset some default styles */
 body {
-    display: flex;
-    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh; /* Use min-height for better responsiveness */
-    width: 100%; /* Use percentage-based width for responsiveness */
-}
-
-h1 {
+    background-color: black;
     font-family: 'Roboto', sans-serif;
-    font-size: 28px;
-    color: #333;
-    text-align: center;
-    margin-top: 20px;
 }
 
-img {
+/* Style the post container */
+.post {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the post header */
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.post-header .header-content {
+    display: flex;
+    align-items: center;
+}
+
+.post-header .html-text {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Style the user name without bold */
+.user-name {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.post-header i.fa-html5 {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.post-header i.fa-ellipsis-vertical {
+    font-size: 36px;
+}
+
+/* Style the post image */
+.post-img img {
+    max-width: 100%;
+    height: auto;
     display: block;
-    max-width: 100%; /* Allow the image to adapt to the container's width */
-    height: auto; /* Maintain aspect ratio without setting a fixed height */
+}
+
+/* Style the post icons */
+.post-icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    color: #333;
+}
+
+.post-icons .fa-bookmark {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.post-icons i {
+    font-size: 40px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Style the post body */
+.post-body {
+    padding: 10px;
+}
+
+.post-body p {
+    font-size: 17px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.post-body strong {
+    font-weight: bold;
 }
